@@ -1,0 +1,49 @@
+<div class="menu-header">
+    <h1>Food Menu</h1>
+    <p>Order your favorite</p>
+  </div>
+  
+  <div class="menu-section">
+    <h2>Most Popular Items</h2>
+    <div class="menu-categories">
+      <div class="category">Popular Breakfast</div>
+      <div class="category">Special Launch</div>
+      <div class="category">Lovely Dinner</div>
+    </div>
+  
+    <div class="menu-list">
+      <div class="menu-item" *ngFor="let item of menuItems">
+        <div class="menu-image">
+          <img [src]="item.image" alt="{{ item.name }}" />
+        </div>
+        <div class="menu-details">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <p class="price">₹{{ item.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="menu-footer">
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>ranidahihande&#64;gmail.com</p>
+      <p>91 1234567890</p>
+       <p>KRANTI CHOWK USMANPURA,<br> AURANGABAD, INDIA</p>
+    </div>
+    <div class="footer-column">
+      <h4>Opening Hours</h4>
+      <p>Mon-Sat: 8AM - 10PM</p>
+      <p>Sun: Closed</p>
+    </div>
+  </footer>
+  

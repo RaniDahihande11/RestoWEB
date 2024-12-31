@@ -1,0 +1,15 @@
+<div class="service-page">
+  
+    <h1 class="heading">Our Services</h1>
+    <p class="sub-heading">We provide top-notch services tailored to your needs.</p>
+  
+    <div class="service-list">
+      <div class="service-card" *ngFor="let service of services" (click)="service.title === 'Online Orders' ? navigateToOrders() : null">
+        <img [src]="service.image" [alt]="service.title" class="service-image" />
+        <h3 class="service-title">{{ service.title}}</h3>
+        <p class="service-description">{{ service.description }}</p>
+      </div>
+    </div>
+  
+  </div>
+  

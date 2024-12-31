@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('./assets/restaurantbgimg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150vh;
+    margin: 0;
+    /* background-attachment: fixed; */
+
+}
